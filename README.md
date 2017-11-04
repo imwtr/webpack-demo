@@ -1,5 +1,5 @@
 # webpack-demo
-一份基础的webpack配置指南，包含解析Sass/ES6，提取(多个)CSS文件，公共文件，热更新替换，开发线上环境区分，jQuery插件引入，页面文件资源引入等基础功能
+一份基础的webpack配置指南，包含解析Sass/ES6，提取(多个)CSS文件，公共文件，热更新替换，开发线上环境区分，jQuery插件引入，页面文件资源引入，编写插件等基础功能
 
 # 详细介绍
 http://www.cnblogs.com/imwtr/p/7786204.html
@@ -7,7 +7,7 @@ http://www.cnblogs.com/imwtr/p/7786204.html
 
 # 使用说明
 1. 确保你已经安装了Python2.7，并且设置了环境变量
-2. 如果你是非Unix用户（如Windows）,就修改 `webpack-demo/public/package.json`中的`scripts`命令
+2. 如果你是非Unix用户（如Windows），修改 `webpack-demo/public/package.json`中的`scripts`命令
 将环境变量的设置方式由 `export NODE_ENV=production && webpack...` 修改成 `SET NODE_ENV=production&& webpack...`（注意引号前无空格）
 
 
