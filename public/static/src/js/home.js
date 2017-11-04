@@ -16,6 +16,38 @@ if (module.hot) {
 import {showMsg} from './components/util';
 
 
+let React = require('react');
+let ReactDOM = require('react-dom')
+
+class Info extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            name: this.props.name || 'myName'
+        };
+    }
+
+    showYear(e) {
+        console.log(this);
+
+        let elem = ReactDOM.findDOMNode(e.target);
+        console.log('year ' + elem.getAttribute('data-year'));
+    }
+
+    render() {
+        return <p onClick={this.showYear} data-year={this.props.year}>{this.state.name}</p>
+    }
+}
+
+Info.defaultProps = {
+    year: new Date().getFullYear()
+};
+
+ReactDOM.render(<Info />, document.querySelector('#box'));
+
+
+
+
 // import '../../libs/magicsearch/jquery.magicsearch2.css';
 // import '../../libs/magicsearch/jquery.magicsearch2.js';
 
