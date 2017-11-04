@@ -6,7 +6,8 @@ http://www.cnblogs.com/imwtr/p/7786204.html
 
 
 # 使用说明
-1. 确保你已经安装了Python2.7，并且设置了环境变量
+1. 确保你已经安装了`Python2.7`，并且设置了环境变量
+2. 安装了`Node.JS`, 全局安装 `npm i -g webpack`
 2. 如果你是非Unix用户（如Windows），修改 `webpack-demo/public/package.json`中的`scripts`命令
 将环境变量的设置方式由 `export NODE_ENV=production && webpack...` 修改成 `SET NODE_ENV=production&& webpack...`（注意引号前无空格）
 
