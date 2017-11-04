@@ -29,8 +29,8 @@ module.exports = merge(commonConfig, {
 
     // 文件输出配置
     output: {
-        // 设置路径，防止访问本地服务器相关资源时，被开发服务器认为时相对其的路径
-        publicPath: 'http://localhost:8188/dist/js',
+        // 设置路径，防止访问本地服务器相关资源时，被开发服务器认为是相对其的路径
+        publicPath: 'http://localhost:8188/dist/js/',
     },
 
     // 模块的处理配置，匹配规则对应文件，使用相应loader配置成可识别的模块
