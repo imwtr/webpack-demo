@@ -13,7 +13,7 @@ $('.bg-input').click(() => {
     // require(['./components/async1']);
 
     require.ensure([], require => {
-        require(['./components/async']).log();
+        require('./components/async').log();
         // require('./components/async2').log();
         // require('./components/async1').log();
         console.log('loading async.js done');
