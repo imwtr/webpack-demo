@@ -48,6 +48,8 @@ module.exports = {
         path: path.resolve(__dirname, 'static/dist/js'),
         // 开发环境使用热更新，方便编译，可以直接不用hash
         filename: '[name].js' + (isProduction ? '?[chunkhash:8]' : ''),
+        // 异步加载模块名
+        chunkFilename: '[name].js?[chunkhash:8]'
     },
 
     // 处理相关文件的检索及引用方式
