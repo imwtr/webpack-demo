@@ -3,6 +3,24 @@ if (process.env.NODE_ENV === 'development') {
     require('../../../../views/home/home.html');
 }
 
+
+// 异步模块加载例子
+// require('./components/async2').log();
+
+$('.bg-input').click(() => {
+    console.log('clicked, loading async.js')
+
+    // require(['./components/async1']);
+
+    require.ensure([], require => {
+        require(['./components/async']).log();
+        // require('./components/async2').log();
+        // require('./components/async1').log();
+        console.log('loading async.js done');
+    }, 'async_chunk');
+});
+
+
 // 设置允许模块热替换
 if (module.hot) {
     module.hot.accept();
@@ -16,6 +34,7 @@ if (module.hot) {
 import {showMsg} from './components/util';
 
 
+// React使用例子
 let React = require('react');
 let ReactDOM = require('react-dom')
 
