@@ -1,5 +1,5 @@
 # webpack-demo
-一份基础的webpack配置指南，包含解析Sass/ES6，提取(多个)CSS文件，公共文件，热更新替换，开发线上环境区分，jQuery插件引入，页面文件资源引入，编写插件等基础功能
+一份基础的webpack配置指南，包含解析Sass/ES6，提取(多个)CSS文件，公共文件，热更新替换，开发线上环境区分，jQuery插件引入，页面文件资源引入，编写插件，模块异步加载 等基础功能
 
 # 详细介绍
 http://www.cnblogs.com/imwtr/p/7786204.html
