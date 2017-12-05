@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:win:dev": "SET NODE_ENV=development&& webpack-dev-server --config webpack.config.dev.js",
-    "build:win:prod": "SET NODE_ENV=production&& webpack --config webpack.config.prod.js --watch "
+    "build:win:prod": "SET NODE_ENV=production&& webpack --config webpack.config.prod.js --watch ",
     "build:unix:dev": "export NODE_ENV=development && webpack-dev-server --config webpack.config.dev.js",
     "build:unix:prod": "export NODE_ENV=production && webpack --config webpack.config.prod.js --watch "
   },
