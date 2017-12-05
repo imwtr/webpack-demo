@@ -16,7 +16,7 @@ http://www.cnblogs.com/imwtr/p/7786204.html
 1. `cd webpack-demo && node server.js`  开启node服务
 2. `cd webpack-demo/public`
 3. `npm install` 或 `cnpm install`
-4. `npm run build:dev`(开发环境) 或 `npm run build:prod`(生产环境) 开始编译，查看编译结果
+4. `npm run build:unix:dev`(开发环境，windows将unix换为win) 或 `npm run build:unix:prod`(生产环境，windows将unix换为win) 开始编译，查看编译结果
 5. 浏览器访问 http://localhost:8088/views/home/home_tpl.html 或 http://localhost:8088/views/home/home.html 查看页面
 6. 根据自己需要，修改配置项或各模块，重新编译查看结果 
    
