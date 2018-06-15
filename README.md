@@ -1,5 +1,6 @@
 # webpack-demo
 一份基础的webpack3配置指南，包含解析Sass/ES6，提取(多个)CSS文件，公共文件，热更新替换，开发线上环境区分，jQuery插件引入，页面文件资源引入，编写插件，模块异步加载 等基础功能
+
 请移步使用[新版webpack4的配置](https://github.com/imwtr/webpack-project-config-reference)，在笔者的中小项目中，升级为v4之后，编译性能提升了至少7倍！
 
 # 详细介绍
